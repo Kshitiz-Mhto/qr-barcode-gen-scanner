@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity2">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scannerView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:autoFocusButtonColor="#C51162"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="#ED1B1B"
+        />
+
+    <TextView
+        android:id="@+id/etScannedResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Scanned result here!!"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@null"
+        android:text="Back to home"
+        android:layout_gravity="center"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
