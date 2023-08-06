@@ -42,7 +42,7 @@ class MainActivity2 : AppCompatActivity() {
     private fun codeScanner() {
         codeScanner = CodeScanner(this, binding.scannerView)
         codeScanner.apply {
-            camera = CodeScanner.CAMERA_FRONT
+            camera = CodeScanner.CAMERA_BACK
             formats = CodeScanner.ALL_FORMATS
             autoFocusMode = AutoFocusMode.SAFE
             scanMode = ScanMode.CONTINUOUS
